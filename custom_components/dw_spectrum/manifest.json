@@ -1,0 +1,9 @@
+{
+  "codeowners": ["@disforw"],
+  "config_flow": false,
+  "dependencies": [],
+  "documentation": "https://github.com/boralyl/github-custom-component-tutorial",
+  "domain": "dw_spectrum",
+  "name": "Digital Watchdog Spectrum",
+  "requirements": []
+}
