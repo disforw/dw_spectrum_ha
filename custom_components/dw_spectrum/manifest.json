@@ -2,7 +2,7 @@
   "codeowners": ["@disforw"],
   "config_flow": false,
   "dependencies": [],
-  "documentation": "https://github.com/boralyl/github-custom-component-tutorial",
+  "documentation": "https://github.com/disforw/dw_spectrum_ha",
   "domain": "dw_spectrum",
   "name": "Digital Watchdog Spectrum",
   "requirements": []
