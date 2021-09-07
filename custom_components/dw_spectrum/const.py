@@ -1,0 +1,1 @@
+DOMAIN = "dw_spectrum"
