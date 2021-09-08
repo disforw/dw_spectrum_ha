@@ -28,21 +28,6 @@ from homeassistant.helpers.typing import (
 )
 
 from .const import (
-    ATTR_CLONES,
-    ATTR_CLONES_UNIQUE,
-    ATTR_FORKS,
-    ATTR_LATEST_COMMIT_MESSAGE,
-    ATTR_LATEST_COMMIT_SHA,
-    ATTR_LATEST_OPEN_ISSUE_URL,
-    ATTR_LATEST_OPEN_PULL_REQUEST_URL,
-    ATTR_LATEST_RELEASE_TAG,
-    ATTR_LATEST_RELEASE_URL,
-    ATTR_OPEN_ISSUES,
-    ATTR_OPEN_PULL_REQUESTS,
-    ATTR_PATH,
-    ATTR_STARGAZERS,
-    ATTR_VIEWS,
-    ATTR_VIEWS_UNIQUE,
     BASE_API_URL,
 )
 
@@ -51,10 +36,6 @@ _LOGGER = logging.getLogger(__name__)
 # Time between updating data from GitHub
 SCAN_INTERVAL = timedelta(minutes=10)
 
-CONF_REPOS = "repositories"
-REPO_SCHEMA = vol.Schema(
-    {vol.Required(CONF_PATH): cv.string, vol.Optional(CONF_NAME): cv.string}
-)
 
 PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend(
     {
