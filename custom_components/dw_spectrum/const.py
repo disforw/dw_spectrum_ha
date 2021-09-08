@@ -1,4 +1,5 @@
 DOMAIN = "dw_spectrum"
 
 
-API_BASE_ADDR = "https://{h}:{p}/api"
+BASE_API_URL = "https://{h}:{p}/api"
+DEFAULT_PORT = "7001"
