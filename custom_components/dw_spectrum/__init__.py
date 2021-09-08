@@ -1,4 +1,6 @@
-DOMAIN = "hello_state"
+from .const import (
+    DOMAIN,
+)
 
 
 def setup(hass, config):
