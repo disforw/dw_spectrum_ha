@@ -12,11 +12,10 @@ from gidgethub.aiohttp import GitHubAPI
 
 from homeassistant.components.sensor import PLATFORM_SCHEMA
 from homeassistant.const import (
-    ATTR_NAME,
-    CONF_ACCESS_TOKEN,
-    CONF_NAME,
-    CONF_PATH,
-    CONF_URL,
+    CONF_ADDRESS,
+    CONF_PORT,
+    CONF_USERNAME,
+    CONF_PASSWORD,
 )
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
 import homeassistant.helpers.config_validation as cv
@@ -39,9 +38,10 @@ SCAN_INTERVAL = timedelta(minutes=10)
 
 PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend(
     {
-        vol.Required(CONF_ACCESS_TOKEN): cv.string,
-        vol.Required(CONF_REPOS): vol.All(cv.ensure_list, [REPO_SCHEMA]),
-        vol.Optional(CONF_URL): cv.url,
+        vol.Required(CONF_ADDRESS): cv.string,
+        vol.Required(CONF_USERNAME): cv.string,
+        vol.Required(CONF_PASSWORD): cv.string,
+        vol.Optional(CONF_PORT): cv.url,
     }
 )
 
