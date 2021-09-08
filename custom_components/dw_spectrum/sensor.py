@@ -28,6 +28,7 @@ from homeassistant.helpers.typing import (
 
 from .const import (
     BASE_API_URL,
+    DEFAULT_PORT,
 )
 
 
@@ -41,7 +42,7 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend(
         vol.Required(CONF_ADDRESS): cv.string,
         vol.Required(CONF_USERNAME): cv.string,
         vol.Required(CONF_PASSWORD): cv.string,
-        vol.Optional(CONF_PORT): cv.url,
+        vol.Optional(CONF_PORT, default=DEFAULT_PORT): cv.port,
     }
 )
 
