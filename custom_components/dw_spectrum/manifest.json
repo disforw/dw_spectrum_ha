@@ -6,4 +6,5 @@
   "domain": "dw_spectrum",
   "name": "Digital Watchdog Spectrum",
   "requirements": []
+  "iot_class": "local_polling"
 }
