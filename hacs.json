@@ -1,0 +1,5 @@
+{
+  "name": "Digital Watchdog Spectrum",
+  "domains": ["sensor", "switch", "binary_sensor"],
+  "iot_class": "Local Push"
+}
