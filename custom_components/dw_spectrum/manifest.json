@@ -1,10 +1,10 @@
 {
   "codeowners": ["@disforw"],
-  "config_flow": false,
+  "config_flow": true,
   "dependencies": [],
   "documentation": "https://github.com/disforw/dw_spectrum_ha",
   "domain": "dw_spectrum",
   "name": "Digital Watchdog Spectrum",
-  "requirements": [],
+  "requirements": ["gidgethub[aiohttp]==4.1.1"],
   "iot_class": "local_polling"
 }
