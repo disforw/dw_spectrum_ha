@@ -8,14 +8,6 @@ from .const import DOMAIN
 _LOGGER = logging.getLogger(__name__)
 
 
-
-def setup(hass, config):
-    hass.states.set("hello_state.world", "Paulus")
-
-    # Return boolean to indicate that initialization was successful.
-    return True
-
-
 async def async_setup_entry(
     hass: core.HomeAssistant, entry: config_entries.ConfigEntry
 ) -> bool:
